@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Playfair Display", serif;
+}
+body{
+    font-size: 16px;
+    min-height: 100vh;
+
+    overflow: hidden;
+}
+/* home pagr */
+.home-page{
+    background-image: url(assets/home/background-home-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    display: flex;
+    padding: 50px 0 20px 50px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+header hr {
+    width: 450%;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.5); 
+    margin: 0 20px;
+    
+    align-self: center;
+  
+}
+nav{
+    position: absolute;
+    right: 0;
+    display: flex;
+    gap: 40px;
+    background: rgba(71, 71, 71, 0.135);
+    padding: 20px;
+    width: 58%;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+}
+header nav a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.685);
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+}
+nav a:hover,
+nav a.active {
+    color: white;
+}
+
+nav  a.active::after,
+nav  a:hover::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: white;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    border-radius: 50px;
+}
+header nav a span{
+    margin-right: 5px;
+    color: white;
+    font-weight: 500;
+}
+.hero{
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: end;
+    margin-top: 80px;
+}
+.hero .des{
+    max-width: 30%;
+}
+.hero .des h5{
+    letter-spacing: 3px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.hero .des h1{
+    margin: 15px 0;
+    font-size: 110px;
+    letter-spacing: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+}.hero .des p{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.783);
+    line-height: 1.8;
+    font-weight: 300;
+}
+.hero .circle{
+    padding: 55px 28px;
+    background: white;
+    border-radius: 50%;
+}
+.hero .circle a{
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+   font-weight: 300;
+}
+/* destination-moon */
+.destination{
+      
+    background-image: url(assets/destination/background-destination-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.moon{
+    margin: 10px 150px;
+    color: white;
+}
+.moon h1 span{
+    margin-right: 10px;
+    color: white;
+    font-weight: 500;
+}
+.moon h1{
+
+ 
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.box{
+    display: flex;
+
+    margin: 15px 80px 10px 80px;
+ justify-content: space-between;
+}
+.box img {
+    width: 50%;
+    margin-top: 0px;
+}
+.box .des{
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+.box .des .nav{
+display: flex;
+justify-content: space-between;
+max-width: 70%;
+margin-bottom: 20px;
+
+}
+.box .des .nav a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.nav  a.active::after,
+.nav  a:hover::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: white;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    border-radius: 50px;
+}
+.box .des h1{
+    margin: 5px 0;
+    font-size: 80px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.box .des p{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.783);
+    line-height: 1.8;
+    font-weight: 300;
+}
+.box .des .info{
+    display: flex;
+    gap: 60px;
+    margin-top: 30px;
+}
+.box .des .info span{
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.783);
+    font-weight: 300;
+}
+.box .des .info p{
+    font-size: 22px;
+    color: white;
+    font-weight: 600;
+}
+/* crew page */
+.crew{
+    background-image: url(assets/crew/background-crew-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.engineer{
+    margin: 10px 150px;
+    color: white;
+}
+.engineer .box{
+    margin:50px 0;
+    align-items: start;
+    text-align: left;
+ 
+}
+.engineer h1 span {
+    margin-right: 10px;
+    color: white;
+    font-weight: 500;
+}
+.engineer .box .info {
+    position: relative;
+    height: 250px;
+}
+
+.engineer .box .info h1{
+    margin: 5px 0;
+    font-size: 34px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+.engineer .box .info span{
+    color: #7e7e7e;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+}
+.engineer .box .info p{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.783);
+    line-height: 1.8;
+    font-weight: 300;
+    max-width: 80%;
+}
+.engineer .box .info .circles{
+    display: flex;
+ gap: 15px;
+position: absolute;
+bottom: -30px;
+}
+.engineer .box .info .circle{
+    height: 15px;
+    width: 15px;
+    background:rgba(255, 255, 255, 0.148) ;
+    border-radius: 50%;
+}
+.engineer .box .info .lamp{
+    background: white;
+}
+/* technology page */
+.technology{
+    background-image: url(assets/technology/background-technology-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.vehicle{
+    margin: 10px 0 150px   150px ;
+    color: white;
+}
+.vehicle .col{
+    display: flex;
+    flex-direction: column;
+gap: 20px;
+}
+.vehicle .box{
+    gap: 70px;
+}
+.vehicle h1 span {
+    margin-right: 10px;
+    color: white;
+    font-weight: 500;
+}
+.vehicle .dess{
+    display: flex;
+    gap: 40px;
+    margin-left: -50px;
+    margin-right: 0;
+    margin-top: 10px;
+    max-width: 60%;
+ 
+}
+.vehicle .col:first-child a{
+    padding:25px 30px ;
+  border: 1px solid white;
+   text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    
+}
+.vehicle .col:first-child .enable{
+    background: white;
+    color: black;
+}
+.vehicle .box img{
+   height: 60vh;
+   width: 100%;
+   margin-right: -20px;
+}
+.vehicle .col:last-child span{
+    color: #7e7e7e;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.vehicle .col:last-child h1{
+ 
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.vehicle .col:last-child p{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.783);
+    line-height: 1.8;
+    font-weight: 300;
+}
+header nav .menu{
+    display: none;
+}
+@media screen and (max-width: 900px){
+    
+
+nav{
+    display: none;
+}
+nav a{
+    display: none;
+}
+nav{
+    background: transparent;
+    width: auto;
+    backdrop-filter: blur(0); 
+    -webkit-backdrop-filter: blur(0); 
+}
+header{
+    justify-content: space-between;
+    padding: 20px 30px;
+    gap: 100px;
+}
+
+header nav .menu {
+    display: block;
+    cursor: pointer;
+}
+.hero{
+    max-width: 100%;
+    flex-direction: column;
+    padding:50px 30px;
+    align-items: center;
+    text-align: center;
+}
+.hero .des{
+    max-width: 100%;
+    margin: 30px 20px 50px 20px;
+}
+.hero .circle{
+    margin-top: 50px;
+    padding:  100px 80px;
+}
+.box{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    justify-content: center;
+    padding: auto;
+    margin: 30px 0 0 0;
+}
+.box img{
+    width: 100%;
+}
+.box .des{
+    max-width: 100%;
+    margin-top: 20px;
+}
+.box .des .nav{
+    max-width: 100%;
+}
+.box .des .info{
+    justify-content: space-between;
+    margin-top: 50px;
+}
+h1{
+    text-align: center;
+}
+.engineer .box .info,
+.engineer .box .info p {
+    text-align: center;
+    max-width: 100%;
+margin-top: 30px;}
+    .engineer .box .info .circles {
+        left: 40%;
+      
+    }
+    .vehicle .box img {
+        height: 40vh;
+        width: 90%;
+        margin-right:0;
+    }
+    .vehicle {
+        margin:10px;
+    } 
+}
+    @media screen and (max-width: 376px) {
+        body {
+            font-size: 14px;
+            overflow: auto;
+        }
+        .moon {
+            margin: 10px 50px;
+           
+        }
+        .engineer {
+            margin: 10px 50px;
+        }
+        header {
+            padding: 10px 20px;
+        }
+        
+        nav {
+            display: none;
+        }
+        
+        nav.active a {
+            display: block;
+            font-size: 14px;
+        }
+    
+        header nav .menu {
+            display: block;
+            cursor: pointer;
+            font-size: 14px;
+        }
+    
+        .hero {
+            flex-direction: column;
+            padding: 20px;
+            text-align: center;
+        }
+        .engineer .box .info .circles {
+            left: 30%;
+        }
+        .hero .des {
+            max-width: 100%;
+            margin: 10px;
+        }
+    
+        .hero .des h1 {
+            font-size: 50px;
+            letter-spacing: 5px;
+        }
+        
+        .hero .des p {
+            font-size: 12px;
+        }
+    
+        .hero .circle {
+            margin-top: 20px;
+            padding: 65px 40px;
+        }
+    
+        .box {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 20px 0;
+        }
+    
+        .box img {
+            width: 100%;
+            max-height: 40vh;
+            margin-top: 43px;
+        }
+     
+    
+        .box .des {
+            max-width: 100%;
+            margin-top: 20px;
+        }
+    
+        .box .des h1 {
+            font-size: 40px;
+        }
+    
+        .box .des p {
+            font-size: 12px;
+        }
+    
+        .engineer .box .info {
+            text-align: center;
+            margin-top: 20px;
+        }
+    
+        .engineer .box .info h1 {
+            font-size: 20px;
+        }
+    
+        .vehicle {
+            margin: 10px 50px;
+        }
+    
+        .vehicle .box img {
+            height: 30vh;
+            width: 100%;
+            margin-top: -50px;
+        }
+    
+        .vehicle .col:first-child a {
+            padding: 15px 20px;
+        }
+    
+        .vehicle .col:last-child h1 {
+            font-size: 24px;
+        }
+    
+        .vehicle .col:last-child p {
+            font-size: 12px;
+        }
+      
+ 
+        .vehicle .col {
+            flex-direction: row;
+        }
+        .vehicle .col:last-child {
+            flex-direction: column;
+        }
+        .vehicle .dess {
+            flex-direction: column;
+            max-width: 1;
+            max-width: 100%;
+            margin: 20px 50px;
+        }
+    }
+    
